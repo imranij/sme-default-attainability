@@ -1,0 +1,113 @@
+diff --git a/code/07_sba_prepare.py b/code/07_sba_prepare.py
+--- a/code/07_sba_prepare.py
++++ b/code/07_sba_prepare.py
+@@ -16,3 +16,3 @@ from common import DATA, RESULTS, dump
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ os.makedirs(PROC, exist_ok=True)
+diff --git a/code/08_sba_q1.py b/code/08_sba_q1.py
+--- a/code/08_sba_q1.py
++++ b/code/08_sba_q1.py
+@@ -27,3 +27,3 @@ from src.eval.dir_metric import default_inflow, risk_to_score  # noqa: E402
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ SOURCES = ["firmographics", "guarantee", "bank"]
+diff --git a/code/09_sba_q2.py b/code/09_sba_q2.py
+--- a/code/09_sba_q2.py
++++ b/code/09_sba_q2.py
+@@ -21,3 +21,3 @@ from src.eval.dir_metric import _approved_index, default_inflow, dir_metric  # n
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ A0 = 0.7
+diff --git a/code/10_gate_kendall.py b/code/10_gate_kendall.py
+--- a/code/10_gate_kendall.py
++++ b/code/10_gate_kendall.py
+@@ -27,3 +27,3 @@ from src.models.dial_objective import lightgbm_dial_objective  # noqa: E402
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ LEAVES = [15, 31, 63]
+diff --git a/code/11_sba_components.py b/code/11_sba_components.py
+--- a/code/11_sba_components.py
++++ b/code/11_sba_components.py
+@@ -26,3 +26,3 @@ from src.models.dial_objective import (lightgbm_dial_objective, surrogate_terms,
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ 
+diff --git a/code/12_sba_q3.py b/code/12_sba_q3.py
+--- a/code/12_sba_q3.py
++++ b/code/12_sba_q3.py
+@@ -25,3 +25,3 @@ from src.eval.dir_metric import _approved_index, default_inflow  # noqa: E402
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ SRC = ["F", "G", "B"]
+diff --git a/code/15_hc_prepare.py b/code/15_hc_prepare.py
+--- a/code/15_hc_prepare.py
++++ b/code/15_hc_prepare.py
+@@ -24,3 +24,3 @@ from common import DATA, dump
+ HC = os.path.join(DATA, "home_credit")
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ os.makedirs(PROC, exist_ok=True)
+diff --git a/code/16_hc_q1.py b/code/16_hc_q1.py
+--- a/code/16_hc_q1.py
++++ b/code/16_hc_q1.py
+@@ -30,3 +30,3 @@ from src.eval.dir_metric import default_inflow, risk_to_score  # noqa: E402
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ SOURCES = ["application", "bureau", "instalments", "pos_cash"]
+diff --git a/code/17_hc_q2.py b/code/17_hc_q2.py
+--- a/code/17_hc_q2.py
++++ b/code/17_hc_q2.py
+@@ -22,3 +22,3 @@ from src.eval.dir_metric import _approved_index, default_inflow, dir_metric  # n
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ A0 = 0.7
+diff --git a/code/18_hc_q3.py b/code/18_hc_q3.py
+--- a/code/18_hc_q3.py
++++ b/code/18_hc_q3.py
+@@ -29,3 +29,3 @@ from src.eval.dir_metric import default_inflow  # noqa: E402
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ SRC = ["A", "U", "I", "P"]
+diff --git a/code/19_gate_hc.py b/code/19_gate_hc.py
+--- a/code/19_gate_hc.py
++++ b/code/19_gate_hc.py
+@@ -34,3 +34,3 @@ from src.models.dial_objective import lightgbm_dial_objective  # noqa: E402
+ 
+-PROC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
++from common import PROC  # the repository root is resolved once, in common.py
+ LEAVES = [15, 31, 63]
+diff --git a/code/common.py b/code/common.py
+--- a/code/common.py
++++ b/code/common.py
+@@ -13,9 +13,14 @@ import numpy as np
+ 
+-CODE_SRC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "code"))
+-if CODE_SRC not in sys.path:
+-    sys.path.insert(0, CODE_SRC)
+-
+-RESULTS = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "results"))
+-FIGS = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "figures"))
+-DATA = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "raw"))
++# The repository root is found once, from SME_ATTAIN_ROOT if it is set and otherwise from this
++# file's own location, and every path below is built from it.
++ROOT = os.path.abspath(os.environ.get("SME_ATTAIN_ROOT",
++                                      os.path.join(os.path.dirname(__file__), "..")))
++LIB = os.path.join(ROOT, "lib")
++if LIB not in sys.path:
++    sys.path.insert(0, LIB)
++
++RESULTS = os.path.join(ROOT, "results")
++FIGS = os.path.join(ROOT, "figures")
++DATA = os.path.join(ROOT, "data", "raw")
++PROC = os.path.join(ROOT, "data", "processed")
+ os.makedirs(RESULTS, exist_ok=True)
