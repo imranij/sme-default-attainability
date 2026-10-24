@@ -1,0 +1,13 @@
+{
+ "source": "HomeCredit",
+ "study": "S5_coverage_extension",
+ "a": 0.6,
+ "population_n": 76878,
+ "subsample_m": 40000,
+ "reps": 60,
+ "n_boot": 60,
+ "base_rate": 0.07965867998647207,
+ "population_DIR": 0.10832232496697491,
+ "coverage": 1.0,
+ "nominal": 0.95
+}

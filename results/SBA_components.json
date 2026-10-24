@@ -1,0 +1,837 @@
+{
+ "source": "SBA",
+ "best_kappa": 0.5,
+ "best_lambda": 0.5,
+ "best_kappa_lambda_val_DIR": 0.09329221279876632,
+ "DIR_xent_a07": 0.057027099338760934,
+ "DIR_dial_a07": 0.019156824523181792,
+ "difference_between_objectives": 0.03787027481557914,
+ "difference_between_objectives_pp": 3.787027481557914,
+ "mdd_sd_of_DIR_difference": 0.001544524059323197,
+ "minimum_detectable_difference": 0.004327115745643791,
+ "mdd_pp": 0.4327115745643791,
+ "powered": true,
+ "omitted_gradient_mass": 2.4113240987390143e-05,
+ "auc_by_config": {
+  "F": 0.619373427685134,
+  "G": 0.9415372428197472,
+  "B": 0.6616709676547028,
+  "F+G": 0.9493716731204482,
+  "F+B": 0.6692284222463529,
+  "G+B": 0.9623575471774837,
+  "F+G+B": 0.9643056501840543,
+  "dial": 0.9436890079999114
+ },
+ "dir_by_config": {
+  "0.5": {
+   "F": -5.1322136089577945,
+   "G": -0.1300602928509904,
+   "B": -4.859173126614987,
+   "F+G": -0.009474590869939625,
+   "F+B": -4.5710594315245485,
+   "G+B": 0.3081395348837209,
+   "F+G+B": 0.33548664944013784,
+   "dial": -0.04521963824289399
+  },
+  "0.6": {
+   "F": -1.8099686028257458,
+   "G": -0.019466248037676603,
+   "B": -1.629120879120879,
+   "F+G": 0.031161695447409765,
+   "F+B": -1.628021978021978,
+   "G+B": 0.11711145996860284,
+   "F+G+B": 0.14199372056514914,
+   "dial": -0.03422291993720572
+  },
+  "0.7": {
+   "F": -0.6765279211099646,
+   "G": -0.016167870657034733,
+   "B": -0.5808966861598441,
+   "F+G": 0.0165883117379505,
+   "F+B": -0.5856362037992584,
+   "G+B": 0.05901463899399917,
+   "F+G+B": 0.06635324695180211,
+   "dial": 0.019149180139892197
+  },
+  "0.8": {
+   "F": -0.29040684063970845,
+   "G": -0.007614400827973711,
+   "B": -0.24642073876937487,
+   "F+G": 0.009092925260589912,
+   "F+B": -0.23621892018432278,
+   "G+B": 0.02225179271087463,
+   "F+G+B": 0.024937778763460594,
+   "dial": -0.0016263768758779662
+  },
+  "0.9": {
+   "F": -0.10479900449061286,
+   "G": -0.0005410377103285402,
+   "B": -0.06521307868491766,
+   "F+G": 0.0036790564302331408,
+   "F+B": -0.07565510649425589,
+   "G+B": 0.0068351097404822925,
+   "F+G+B": 0.00791718516113904,
+   "dial": -0.0021280816606250585
+  }
+ },
+ "reversing_pairs": 5,
+ "total_pairs": 140,
+ "reversing_pairs_detail": [
+  {
+   "a": 0.6,
+   "pair": [
+    "G",
+    "dial"
+   ]
+  },
+  {
+   "a": 0.7,
+   "pair": [
+    "B",
+    "F+B"
+   ]
+  },
+  {
+   "a": 0.7,
+   "pair": [
+    "F+G",
+    "dial"
+   ]
+  },
+  {
+   "a": 0.9,
+   "pair": [
+    "G",
+    "dial"
+   ]
+  },
+  {
+   "a": 0.9,
+   "pair": [
+    "B",
+    "F+B"
+   ]
+  }
+ ],
+ "auc_dir_consistent": false,
+ "rbo_bootstrap": 0.8460208706705454,
+ "rbo_out_of_time": 0.5119968221933603,
+ "rbo_dial_vs_xent": 0.7543562803336111,
+ "rbo_stability_shift": -0.0916645903369343,
+ "abstention": {
+  "b=0.02": {
+   "n_routed": 3225,
+   "n_routed_approved": 1550,
+   "DI_a07": 0.21641519965270087,
+   "gain_pp_per_unit_rho": 1.2500996713061814,
+   "DIR_gain_per_unit_rho": 0.05776394972776027
+  },
+  "b=0.05": {
+   "n_routed": 8062,
+   "n_routed_approved": 3515,
+   "DI_a07": 0.21641519965270087,
+   "gain_pp_per_unit_rho": 2.796998343241399,
+   "DIR_gain_per_unit_rho": 0.12924223195644163
+  },
+  "b=0.1": {
+   "n_routed": 16124,
+   "n_routed_approved": 6112,
+   "DI_a07": 0.21641519965270087,
+   "gain_pp_per_unit_rho": 4.805485908692224,
+   "DIR_gain_per_unit_rho": 0.22204937159700333
+  }
+ },
+ "selective_prediction_gain_pp_per_rho": 2.796998343241399,
+ "fairness": {
+  "sector": {
+   "rows": [
+    {
+     "level": 0,
+     "n": 1078,
+     "approval_rate": 0.9035250463821892,
+     "default_rate_among_approvals": 0.12114989733059549,
+     "routed_share": 0.039888682745825604,
+     "pool_share": 0.006685520081367369,
+     "routed_share_of_routed": 0.0053336641032001985
+    },
+    {
+     "level": 3,
+     "n": 20278,
+     "approval_rate": 0.6929677482986488,
+     "default_rate_among_approvals": 0.22843723313407344,
+     "routed_share": 0.051139165598185224,
+     "pool_share": 0.12575971819106446,
+     "routed_share_of_routed": 0.12862813197717687
+    },
+    {
+     "level": 4,
+     "n": 2425,
+     "approval_rate": 0.7418556701030928,
+     "default_rate_among_approvals": 0.24569205113952194,
+     "routed_share": 0.0622680412371134,
+     "pool_share": 0.015039319292500805,
+     "routed_share_of_routed": 0.018729843711237905
+    },
+    {
+     "level": 5,
+     "n": 3041,
+     "approval_rate": 0.7731009536336731,
+     "default_rate_among_approvals": 0.22586133560187155,
+     "routed_share": 0.053929628411706676,
+     "pool_share": 0.018859616481853587,
+     "routed_share_of_routed": 0.020342346812205408
+    },
+    {
+     "level": 6,
+     "n": 6463,
+     "approval_rate": 0.7877146835834752,
+     "default_rate_among_approvals": 0.17383618149675897,
+     "routed_share": 0.04038372272938264,
+     "pool_share": 0.04008211158244648,
+     "routed_share_of_routed": 0.03237410071942446
+    },
+    {
+     "level": 7,
+     "n": 10386,
+     "approval_rate": 0.6998844598497979,
+     "default_rate_among_approvals": 0.23304443527307744,
+     "routed_share": 0.050645099171962256,
+     "pool_share": 0.06441169903996427,
+     "routed_share_of_routed": 0.06524435623914661
+    },
+    {
+     "level": 8,
+     "n": 17973,
+     "approval_rate": 0.6368441551215712,
+     "default_rate_among_approvals": 0.2253188886947405,
+     "routed_share": 0.05146608802092027,
+     "pool_share": 0.11146461263674927,
+     "routed_share_of_routed": 0.11473579756884147
+    },
+    {
+     "level": 9,
+     "n": 8984,
+     "approval_rate": 0.6674087266251113,
+     "default_rate_among_approvals": 0.22448298865910607,
+     "routed_share": 0.051424755120213717,
+     "pool_share": 0.05571680186549577,
+     "routed_share_of_routed": 0.057305879434383526
+    },
+    {
+     "level": 10,
+     "n": 8093,
+     "approval_rate": 0.7097491659458791,
+     "default_rate_among_approvals": 0.2038649025069638,
+     "routed_share": 0.04608921290003707,
+     "pool_share": 0.05019101485946764,
+     "routed_share_of_routed": 0.04626643512775986
+    },
+    {
+     "level": 11,
+     "n": 651,
+     "approval_rate": 0.7235023041474654,
+     "default_rate_among_approvals": 0.2229299363057325,
+     "routed_share": 0.03686635944700461,
+     "pool_share": 0.004037359529656917,
+     "routed_share_of_routed": 0.002976928801786157
+    },
+    {
+     "level": 12,
+     "n": 3125,
+     "approval_rate": 0.6784,
+     "default_rate_among_approvals": 0.21839622641509435,
+     "routed_share": 0.04832,
+     "pool_share": 0.019380566098583515,
+     "routed_share_of_routed": 0.018729843711237905
+    },
+    {
+     "level": 13,
+     "n": 3098,
+     "approval_rate": 0.6233053582956747,
+     "default_rate_among_approvals": 0.26929052304505435,
+     "routed_share": 0.05196901226597805,
+     "pool_share": 0.01921311800749175,
+     "routed_share_of_routed": 0.01997023071198214
+    },
+    {
+     "level": 14,
+     "n": 4543,
+     "approval_rate": 0.6128109178956637,
+     "default_rate_among_approvals": 0.29238505747126436,
+     "routed_share": 0.05546995377503852,
+     "pool_share": 0.02817469177147677,
+     "routed_share_of_routed": 0.03125775241875465
+    },
+    {
+     "level": 15,
+     "n": 18198,
+     "approval_rate": 0.7232662929992307,
+     "default_rate_among_approvals": 0.20908676492934206,
+     "routed_share": 0.047587646994175184,
+     "pool_share": 0.11286001339584728,
+     "routed_share_of_routed": 0.10741751426445051
+    },
+    {
+     "level": 17,
+     "n": 9712,
+     "approval_rate": 0.7042833607907742,
+     "default_rate_among_approvals": 0.216812865497076,
+     "routed_share": 0.051585667215815485,
+     "pool_share": 0.060231698543821786,
+     "routed_share_of_routed": 0.06214338873728603
+    },
+    {
+     "level": 18,
+     "n": 1978,
+     "approval_rate": 0.7376137512639029,
+     "default_rate_among_approvals": 0.24742974640164497,
+     "routed_share": 0.04802831142568251,
+     "pool_share": 0.01226712311775942,
+     "routed_share_of_routed": 0.011783676507070205
+    },
+    {
+     "level": 19,
+     "n": 8699,
+     "approval_rate": 0.8138866536383492,
+     "default_rate_among_approvals": 0.14279661016949152,
+     "routed_share": 0.035981147258305556,
+     "pool_share": 0.053949294237304955,
+     "routed_share_of_routed": 0.038824113123294465
+    },
+    {
+     "level": 20,
+     "n": 3122,
+     "approval_rate": 0.6925048046124279,
+     "default_rate_among_approvals": 0.23080481036077705,
+     "routed_share": 0.06149903907751442,
+     "pool_share": 0.019361960755128874,
+     "routed_share_of_routed": 0.023815430414289258
+    },
+    {
+     "level": 21,
+     "n": 13876,
+     "approval_rate": 0.6948688382819256,
+     "default_rate_among_approvals": 0.24362165525824517,
+     "routed_share": 0.05859037186509081,
+     "pool_share": 0.08605591525886234,
+     "routed_share_of_routed": 0.10084346316050607
+    },
+    {
+     "level": 22,
+     "n": 14921,
+     "approval_rate": 0.6709335835399772,
+     "default_rate_among_approvals": 0.20277694536010388,
+     "routed_share": 0.04858923664633737,
+     "pool_share": 0.09253677656222867,
+     "routed_share_of_routed": 0.08992805755395683
+    }
+   ],
+   "n_levels": 20,
+   "approval_rate_gap_pp": 29.071412848652557,
+   "default_rate_gap_pp": 17.123516014066887
+  },
+  "region": {
+   "rows": [
+    {
+     "level": 1,
+     "n": 1061,
+     "approval_rate": 0.6229971724787936,
+     "default_rate_among_approvals": 0.25416036308623297,
+     "routed_share": 0.06220546654099906,
+     "pool_share": 0.006580089801791074,
+     "routed_share_of_routed": 0.008186554204911933
+    },
+    {
+     "level": 2,
+     "n": 736,
+     "approval_rate": 0.7459239130434783,
+     "default_rate_among_approvals": 0.16939890710382513,
+     "routed_share": 0.043478260869565216,
+     "pool_share": 0.004564510927538389,
+     "routed_share_of_routed": 0.003969238402381543
+    },
+    {
+     "level": 3,
+     "n": 3451,
+     "approval_rate": 0.5708490292668792,
+     "default_rate_among_approvals": 0.29035532994923857,
+     "routed_share": 0.056505360764995655,
+     "pool_share": 0.021402346753987746,
+     "routed_share_of_routed": 0.024187546514512527
+    },
+    {
+     "level": 4,
+     "n": 21458,
+     "approval_rate": 0.5824867182402833,
+     "default_rate_among_approvals": 0.3054644371549724,
+     "routed_share": 0.06566315593251934,
+     "pool_share": 0.1330778199498896,
+     "routed_share_of_routed": 0.17477052840486232
+    },
+    {
+     "level": 5,
+     "n": 3583,
+     "approval_rate": 0.6405246999720904,
+     "default_rate_among_approvals": 0.19738562091503267,
+     "routed_share": 0.04046888082612336,
+     "pool_share": 0.022220981865991914,
+     "routed_share_of_routed": 0.017985611510791366
+    },
+    {
+     "level": 6,
+     "n": 1849,
+     "approval_rate": 0.7625743645213628,
+     "default_rate_among_approvals": 0.16099290780141845,
+     "routed_share": 0.03136830719307734,
+     "pool_share": 0.011467093349209893,
+     "routed_share_of_routed": 0.007194244604316547
+    },
+    {
+     "level": 9,
+     "n": 9144,
+     "approval_rate": 0.5077646544181977,
+     "default_rate_among_approvals": 0.31639026491492567,
+     "routed_share": 0.05468066491688539,
+     "pool_share": 0.05670908684974325,
+     "routed_share_of_routed": 0.06201935003721161
+    },
+    {
+     "level": 10,
+     "n": 4108,
+     "approval_rate": 0.5131450827653359,
+     "default_rate_among_approvals": 0.3259013282732448,
+     "routed_share": 0.05233690360272639,
+     "pool_share": 0.02547691697055394,
+     "routed_share_of_routed": 0.02666832051600099
+    },
+    {
+     "level": 11,
+     "n": 818,
+     "approval_rate": 0.8361858190709046,
+     "default_rate_among_approvals": 0.17543859649122806,
+     "routed_share": 0.029339853300733496,
+     "pool_share": 0.00507305698196522,
+     "routed_share_of_routed": 0.002976928801786157
+    },
+    {
+     "level": 12,
+     "n": 1216,
+     "approval_rate": 0.8552631578947368,
+     "default_rate_among_approvals": 0.16923076923076924,
+     "routed_share": 0.04194078947368421,
+     "pool_share": 0.0075413658802808165,
+     "routed_share_of_routed": 0.006325973703795584
+    },
+    {
+     "level": 13,
+     "n": 1697,
+     "approval_rate": 0.789628756629346,
+     "default_rate_among_approvals": 0.25,
+     "routed_share": 0.06423099587507367,
+     "pool_share": 0.010524422614174791,
+     "routed_share_of_routed": 0.013520218308112132
+    },
+    {
+     "level": 14,
+     "n": 7357,
+     "approval_rate": 0.6476824792714422,
+     "default_rate_among_approvals": 0.22833158447009444,
+     "routed_share": 0.060350686421095555,
+     "pool_share": 0.04562650393192925,
+     "routed_share_of_routed": 0.05507318283304391
+    },
+    {
+     "level": 15,
+     "n": 3377,
+     "approval_rate": 0.7636955877998223,
+     "default_rate_among_approvals": 0.1345482745250097,
+     "routed_share": 0.04027243115190998,
+     "pool_share": 0.020943414948773286,
+     "routed_share_of_routed": 0.016869263210121558
+    },
+    {
+     "level": 16,
+     "n": 1438,
+     "approval_rate": 0.8477051460361613,
+     "default_rate_among_approvals": 0.12961443806398687,
+     "routed_share": 0.04381084840055633,
+     "pool_share": 0.008918161295924189,
+     "routed_share_of_routed": 0.007814438104688662
+    },
+    {
+     "level": 17,
+     "n": 1484,
+     "approval_rate": 0.7742587601078167,
+     "default_rate_among_approvals": 0.1453437771975631,
+     "routed_share": 0.05256064690026954,
+     "pool_share": 0.009203443228895339,
+     "routed_share_of_routed": 0.00967501860580501
+    },
+    {
+     "level": 18,
+     "n": 1375,
+     "approval_rate": 0.7621818181818182,
+     "default_rate_among_approvals": 0.17557251908396945,
+     "routed_share": 0.03927272727272727,
+     "pool_share": 0.008527449083376746,
+     "routed_share_of_routed": 0.006698089804018854
+    },
+    {
+     "level": 19,
+     "n": 4147,
+     "approval_rate": 0.7957559681697612,
+     "default_rate_among_approvals": 0.13575757575757577,
+     "routed_share": 0.034482758620689655,
+     "pool_share": 0.025718786435464266,
+     "routed_share_of_routed": 0.017737534110642522
+    },
+    {
+     "level": 20,
+     "n": 2587,
+     "approval_rate": 0.6331658291457286,
+     "default_rate_among_approvals": 0.2039072039072039,
+     "routed_share": 0.05141090065713181,
+     "pool_share": 0.016044007839051376,
+     "routed_share_of_routed": 0.01649714710989829
+    },
+    {
+     "level": 21,
+     "n": 931,
+     "approval_rate": 0.8936627282491945,
+     "default_rate_among_approvals": 0.10576923076923077,
+     "routed_share": 0.03007518796992481,
+     "pool_share": 0.0057738582520900006,
+     "routed_share_of_routed": 0.0034730836020838503
+    },
+    {
+     "level": 22,
+     "n": 5439,
+     "approval_rate": 0.6747563890421033,
+     "default_rate_among_approvals": 0.17084468664850136,
+     "routed_share": 0.04853833425261997,
+     "pool_share": 0.03373148768326263,
+     "routed_share_of_routed": 0.03274621681964773
+    },
+    {
+     "level": 23,
+     "n": 4120,
+     "approval_rate": 0.8286407766990291,
+     "default_rate_among_approvals": 0.1619800820152314,
+     "routed_share": 0.041019417475728154,
+     "pool_share": 0.025551338344372503,
+     "routed_share_of_routed": 0.020962540312577525
+    },
+    {
+     "level": 24,
+     "n": 3029,
+     "approval_rate": 0.8038956751403104,
+     "default_rate_among_approvals": 0.1782340862422998,
+     "routed_share": 0.03367448002641136,
+     "pool_share": 0.018785195108035026,
+     "routed_share_of_routed": 0.012651947407591168
+    },
+    {
+     "level": 25,
+     "n": 1237,
+     "approval_rate": 0.7566693613581245,
+     "default_rate_among_approvals": 0.17094017094017094,
+     "routed_share": 0.03637833468067906,
+     "pool_share": 0.0076716032844632975,
+     "routed_share_of_routed": 0.005581741503349045
+    },
+    {
+     "level": 26,
+     "n": 974,
+     "approval_rate": 0.9332648870636551,
+     "default_rate_among_approvals": 0.11001100110011001,
+     "routed_share": 0.02566735112936345,
+     "pool_share": 0.0060405348416065095,
+     "routed_share_of_routed": 0.0031009675018605805
+    },
+    {
+     "level": 27,
+     "n": 2725,
+     "approval_rate": 0.775045871559633,
+     "default_rate_among_approvals": 0.29261363636363635,
+     "routed_share": 0.06935779816513761,
+     "pool_share": 0.016899853637964823,
+     "routed_share_of_routed": 0.02344331431406599
+    },
+    {
+     "level": 28,
+     "n": 646,
+     "approval_rate": 0.9442724458204335,
+     "default_rate_among_approvals": 0.08360655737704918,
+     "routed_share": 0.02631578947368421,
+     "pool_share": 0.004006350623899184,
+     "routed_share_of_routed": 0.0021086579012651947
+    },
+    {
+     "level": 29,
+     "n": 943,
+     "approval_rate": 0.8981972428419936,
+     "default_rate_among_approvals": 0.1345926800472255,
+     "routed_share": 0.03711558854718982,
+     "pool_share": 0.005848279625908561,
+     "routed_share_of_routed": 0.004341354502604812
+    },
+    {
+     "level": 30,
+     "n": 1502,
+     "approval_rate": 0.8368841544607191,
+     "default_rate_among_approvals": 0.14478918058870327,
+     "routed_share": 0.04061251664447404,
+     "pool_share": 0.00931507528962318,
+     "routed_share_of_routed": 0.0075663607045398165
+    },
+    {
+     "level": 31,
+     "n": 4750,
+     "approval_rate": 0.6322105263157894,
+     "default_rate_among_approvals": 0.26973026973026976,
+     "routed_share": 0.06294736842105263,
+     "pool_share": 0.02945846046984694,
+     "routed_share_of_routed": 0.037087571322252544
+    },
+    {
+     "level": 32,
+     "n": 724,
+     "approval_rate": 0.8287292817679558,
+     "default_rate_among_approvals": 0.13833333333333334,
+     "routed_share": 0.04005524861878453,
+     "pool_share": 0.004490089553719829,
+     "routed_share_of_routed": 0.0035971223021582736
+    },
+    {
+     "level": 33,
+     "n": 1492,
+     "approval_rate": 0.6058981233243967,
+     "default_rate_among_approvals": 0.3993362831858407,
+     "routed_share": 0.07305630026809651,
+     "pool_share": 0.009253057478107712,
+     "routed_share_of_routed": 0.013520218308112132
+    },
+    {
+     "level": 34,
+     "n": 13756,
+     "approval_rate": 0.7050741494620529,
+     "default_rate_among_approvals": 0.20208268893700382,
+     "routed_share": 0.045143937191043905,
+     "pool_share": 0.08531170152067674,
+     "routed_share_of_routed": 0.07702803274621682
+    },
+    {
+     "level": 35,
+     "n": 6985,
+     "approval_rate": 0.7769506084466714,
+     "default_rate_among_approvals": 0.15257048092868988,
+     "routed_share": 0.047100930565497495,
+     "pool_share": 0.043319441343553866,
+     "routed_share_of_routed": 0.04080873232448524
+    },
+    {
+     "level": 36,
+     "n": 1436,
+     "approval_rate": 0.7841225626740947,
+     "default_rate_among_approvals": 0.1447602131438721,
+     "routed_share": 0.04665738161559889,
+     "pool_share": 0.008905757733621096,
+     "routed_share_of_routed": 0.008310592904986355
+    },
+    {
+     "level": 37,
+     "n": 2270,
+     "approval_rate": 0.7312775330396476,
+     "default_rate_among_approvals": 0.1427710843373494,
+     "routed_share": 0.03171806167400881,
+     "pool_share": 0.014078043214011064,
+     "routed_share_of_routed": 0.008930786405358472
+    },
+    {
+     "level": 38,
+     "n": 5275,
+     "approval_rate": 0.799431279620853,
+     "default_rate_among_approvals": 0.16054066872184017,
+     "routed_share": 0.04151658767772512,
+     "pool_share": 0.03271439557440897,
+     "routed_share_of_routed": 0.027164475316298686
+    },
+    {
+     "level": 39,
+     "n": 1018,
+     "approval_rate": 0.8163064833005894,
+     "default_rate_among_approvals": 0.1829121540312876,
+     "routed_share": 0.05697445972495088,
+     "pool_share": 0.0063134132122745655,
+     "routed_share_of_routed": 0.007194244604316547
+    },
+    {
+     "level": 40,
+     "n": 887,
+     "approval_rate": 0.649379932356257,
+     "default_rate_among_approvals": 0.2690972222222222,
+     "routed_share": 0.05749718151071026,
+     "pool_share": 0.005500979881421945,
+     "routed_share_of_routed": 0.006325973703795584
+    },
+    {
+     "level": 42,
+     "n": 1633,
+     "approval_rate": 0.683404776484997,
+     "default_rate_among_approvals": 0.2831541218637993,
+     "routed_share": 0.04654011022657685,
+     "pool_share": 0.010127508620475801,
+     "routed_share_of_routed": 0.009426941205656165
+    },
+    {
+     "level": 43,
+     "n": 11283,
+     "approval_rate": 0.7025613755206949,
+     "default_rate_among_approvals": 0.18708212438501323,
+     "routed_share": 0.04138970132057077,
+     "pool_share": 0.06997469673290169,
+     "routed_share_of_routed": 0.05792607293475564
+    },
+    {
+     "level": 44,
+     "n": 4612,
+     "approval_rate": 0.8766261925411969,
+     "default_rate_among_approvals": 0.392035617116003,
+     "routed_share": 0.06287944492627927,
+     "pool_share": 0.02860261467093349,
+     "routed_share_of_routed": 0.03597122302158273
+    },
+    {
+     "level": 45,
+     "n": 2794,
+     "approval_rate": 0.7065139584824625,
+     "default_rate_among_approvals": 0.23302938196555217,
+     "routed_share": 0.07086614173228346,
+     "pool_share": 0.017327776537421548,
+     "routed_share_of_routed": 0.024559662614735796
+    },
+    {
+     "level": 46,
+     "n": 686,
+     "approval_rate": 0.892128279883382,
+     "default_rate_among_approvals": 0.08986928104575163,
+     "routed_share": 0.03206997084548105,
+     "pool_share": 0.004254421869961052,
+     "routed_share_of_routed": 0.0027288514016373107
+    },
+    {
+     "level": 47,
+     "n": 3859,
+     "approval_rate": 0.713915522155999,
+     "default_rate_among_approvals": 0.1996370235934664,
+     "routed_share": 0.04301632547292045,
+     "pool_share": 0.023932673463818808,
+     "routed_share_of_routed": 0.020590424212354255
+    },
+    {
+     "level": 48,
+     "n": 3322,
+     "approval_rate": 0.872366044551475,
+     "default_rate_among_approvals": 0.18771566597653555,
+     "routed_share": 0.037025888019265506,
+     "pool_share": 0.020602316985438216,
+     "routed_share_of_routed": 0.015256760109154057
+    }
+   ],
+   "n_levels": 45,
+   "approval_rate_gap_pp": 43.65077914022357,
+   "default_rate_gap_pp": 31.57297258087915
+  },
+  "size_band": {
+   "rows": [
+    {
+     "level": 0,
+     "n": 3554,
+     "approval_rate": 0.7912211592571751,
+     "default_rate_among_approvals": 0.17354196301564723,
+     "routed_share": 0.0554305008441193,
+     "pool_share": 0.022041130212597057,
+     "routed_share_of_routed": 0.024435623914661374
+    },
+    {
+     "level": 1,
+     "n": 101996,
+     "approval_rate": 0.6717126161810267,
+     "default_rate_among_approvals": 0.2172028257823447,
+     "routed_share": 0.048335228832503234,
+     "pool_share": 0.6325568703331597,
+     "routed_share_of_routed": 0.6115107913669064
+    },
+    {
+     "level": 2,
+     "n": 46167,
+     "approval_rate": 0.7214893755279745,
+     "default_rate_among_approvals": 0.22477408508210994,
+     "routed_share": 0.05287326445296424,
+     "pool_share": 0.2863176304234576,
+     "routed_share_of_routed": 0.3027784668816671
+    },
+    {
+     "level": 3,
+     "n": 9069,
+     "approval_rate": 0.8601830411291211,
+     "default_rate_among_approvals": 0.192923984104602,
+     "routed_share": 0.053258352629837906,
+     "pool_share": 0.05624395326337724,
+     "routed_share_of_routed": 0.059910692135946415
+    }
+   ],
+   "n_levels": 4,
+   "approval_rate_gap_pp": 18.84704249480944,
+   "default_rate_gap_pp": 5.123212206646271
+  }
+ },
+ "approval_rate_gaps_pp": {
+  "sector": 29.071412848652557,
+  "region": 43.65077914022357,
+  "size_band": 18.84704249480944
+ },
+ "default_rate_gaps_pp": {
+  "sector": 17.123516014066887,
+  "region": 31.57297258087915,
+  "size_band": 5.123212206646271
+ },
+ "routed_over_representation_top": [
+  {
+   "dimension": "region",
+   "level": 33,
+   "ratio": 1.4611622525960004,
+   "pool_share": 0.009253057478107712
+  },
+  {
+   "dimension": "region",
+   "level": 45,
+   "ratio": 1.4173579952220683,
+   "pool_share": 0.017327776537421548
+  },
+  {
+   "dimension": "region",
+   "level": 27,
+   "ratio": 1.38719037550725,
+   "pool_share": 0.016899853637964823
+  },
+  {
+   "dimension": "region",
+   "level": 4,
+   "ratio": 1.3132956977404056,
+   "pool_share": 0.1330778199498896
+  },
+  {
+   "dimension": "region",
+   "level": 13,
+   "ratio": 1.2846517860184046,
+   "pool_share": 0.010524422614174791
+  },
+  {
+   "dimension": "region",
+   "level": 31,
+   "ratio": 1.258978600060061,
+   "pool_share": 0.02945846046984694
+  }
+ ]
+}

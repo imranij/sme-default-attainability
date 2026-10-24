@@ -1,0 +1,91 @@
+{
+ "definition_shapley_taylor": "Sundararajan, Dhamdhere & Agarwal (2020), order k = 2, top-order pairs: I(S) = (k/n) sum_{T subset N\\S} delta_S v(T) / C(n-1,|T|)",
+ "definition_grabisch_roubens": "Grabisch & Roubens (1999) Shapley interaction index: weight |T|!(K-|T|-2)!/(K-1)!",
+ "note": "recomputed from the coalition values stored by 12_sba_q3.py and 18_hc_q3.py; no refit",
+ "SBA": {
+  "attainable": {
+   "shapley_taylor": {
+    "firmographics and guarantee": -0.23262746723375755,
+    "firmographics and bank": -0.16678986939599544,
+    "guarantee and bank": -0.2415885877870791
+   },
+   "grabisch_roubens": {
+    "firmographics and guarantee": -0.194971648343704,
+    "firmographics and bank": -0.1291340505059419,
+    "guarantee and bank": -0.20393276889702555
+   },
+   "largest_pair_shapley_taylor": "guarantee and bank",
+   "largest_shapley_taylor": -0.2415885877870791,
+   "largest_pair_grabisch_roubens": "guarantee and bank",
+   "largest_grabisch_roubens": -0.20393276889702555,
+   "same_pair_under_both": true
+  },
+  "achieved": {
+   "shapley_taylor": {
+    "firmographics and guarantee": -0.11602358519016834,
+    "firmographics and bank": -0.15351928522456784,
+    "guarantee and bank": -0.16922849288424016
+   },
+   "grabisch_roubens": {
+    "firmographics and guarantee": -0.08399815749332196,
+    "firmographics and bank": -0.12149385752772146,
+    "guarantee and bank": -0.13720306518739378
+   },
+   "largest_pair_shapley_taylor": "guarantee and bank",
+   "largest_shapley_taylor": -0.16922849288424016,
+   "largest_pair_grabisch_roubens": "guarantee and bank",
+   "largest_grabisch_roubens": -0.13720306518739378,
+   "same_pair_under_both": true
+  },
+  "n_sources": 3
+ },
+ "HomeCredit": {
+  "attainable": {
+   "shapley_taylor": {
+    "application and bureau": -0.4218226413264131,
+    "application and instalments": -0.3486175943705869,
+    "application and POS-cash": -0.2657346393641235,
+    "bureau and instalments": -0.24853224109657135,
+    "bureau and POS-cash": -0.20725340160280462,
+    "instalments and POS-cash": -0.23240239139826763
+   },
+   "grabisch_roubens": {
+    "application and bureau": -0.339351784125632,
+    "application and instalments": -0.2606047913495322,
+    "application and POS-cash": -0.18876402802133294,
+    "bureau and instalments": -0.17281049526398162,
+    "bureau and POS-cash": -0.14257384744847912,
+    "instalments and POS-cash": -0.16218089142366854
+   },
+   "largest_pair_shapley_taylor": "application and bureau",
+   "largest_shapley_taylor": -0.4218226413264131,
+   "largest_pair_grabisch_roubens": "application and bureau",
+   "largest_grabisch_roubens": -0.339351784125632,
+   "same_pair_under_both": true
+  },
+  "achieved": {
+   "shapley_taylor": {
+    "application and bureau": -0.34595336986765934,
+    "application and instalments": -0.2867735003429623,
+    "application and POS-cash": -0.1722969548319341,
+    "bureau and instalments": -0.16919040000124125,
+    "bureau and POS-cash": -0.12880518720223538,
+    "instalments and POS-cash": -0.14278468394035285
+   },
+   "grabisch_roubens": {
+    "application and bureau": -0.2874078694426831,
+    "application and instalments": -0.2249661173457587,
+    "application and POS-cash": -0.12175083309599176,
+    "bureau and instalments": -0.11732399246225443,
+    "bureau and POS-cash": -0.0882000409245098,
+    "instalments and POS-cash": -0.09891765509039989
+   },
+   "largest_pair_shapley_taylor": "application and bureau",
+   "largest_shapley_taylor": -0.34595336986765934,
+   "largest_pair_grabisch_roubens": "application and bureau",
+   "largest_grabisch_roubens": -0.2874078694426831,
+   "same_pair_under_both": true
+  },
+  "n_sources": 4
+ }
+}

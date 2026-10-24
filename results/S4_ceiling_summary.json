@@ -1,0 +1,17 @@
+{
+ "source": "simulator",
+ "n_cells": 36,
+ "mean_bias_pp": -0.008780417899625137,
+ "median_bias_pp": -0.0045338103100142375,
+ "mean_plugin_bias_pp": -0.6738148347500789,
+ "band_coverage": 0.9166666666666666,
+ "nominal": 0.95,
+ "mean_band_width_pp": 1.816560291078674,
+ "frac_uninformative": 1.0,
+ "n_groups": 9,
+ "n_groups_with_sign_change": 6,
+ "band_width_sba_like_pp": 0.39483764904553603,
+ "band_width_hc_like_pp": 0.26120744542956764,
+ "large_cells_note": "simulator cells on the controlled DGP at the (n, base rate) of the two real datasets; not real-data band widths",
+ "runtime_s": 162.58517718315125
+}

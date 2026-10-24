@@ -1,0 +1,34 @@
+{
+ "source": "SBA",
+ "tuned_hyperparameters": {
+  "num_leaves": 31,
+  "n_estimators": 300,
+  "learning_rate": 0.05,
+  "min_child_samples": 50
+ },
+ "validation_auc": 0.9648638925662087,
+ "validation_from_fy": 2004,
+ "auc_tuned_gbdt": 0.946666811316276,
+ "auc_l2_logistic": 0.736523036149719,
+ "fields": [
+  "naics2",
+  "log_noemp",
+  "new_exist",
+  "create_job",
+  "retained_job",
+  "franchise",
+  "urban_rural",
+  "term",
+  "log_grappv"
+ ],
+ "DI0_tuned_a0.5": 0.05760214333556597,
+ "DI0_logistic_a0.5": 0.2629803279501873,
+ "DI0_tuned_a0.6": 0.13168503090567052,
+ "DI0_logistic_a0.6": 0.3102970665453869,
+ "DI0_tuned_a0.7": 0.2317955896554474,
+ "DI0_logistic_a0.7": 0.35568037848517337,
+ "DI0_tuned_a0.8": 0.3145935888987945,
+ "DI0_logistic_a0.8": 0.39379820923291603,
+ "DI0_tuned_a0.9": 0.3820906835722161,
+ "DI0_logistic_a0.9": 0.4237458654906284
+}

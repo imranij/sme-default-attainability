@@ -1,0 +1,144 @@
+{
+ "source": "SBA",
+ "a": 0.7,
+ "DI0_tuned": 0.23179558965544736,
+ "base_rate_test": 0.4379449777976235,
+ "n_test": 161244,
+ "sources": {
+  "F": "firmographics",
+  "G": "guarantee",
+  "B": "bank"
+ },
+ "v_attainable": {
+  "EMPTY": -0.889358544088811,
+  "F": -0.5666178116594889,
+  "G": 0.040949323332786225,
+  "B": -0.5224383952281042,
+  "F+G": 0.055750950748243655,
+  "F+B": -0.44179916997488466,
+  "G+B": 0.09096924662630679,
+  "F+G+B": 0.08960428020598299
+ },
+ "v_achieved": {
+  "EMPTY": -0.889358544088811,
+  "F": -0.6765279211099646,
+  "G": -0.016167870657034733,
+  "B": -0.5808966861598441,
+  "F+G": 0.0165883117379505,
+  "F+B": -0.5856362037992584,
+  "G+B": 0.05901463899399917,
+  "F+G+B": 0.06635324695180211
+ },
+ "shapley_attainable": {
+  "firmographics": 0.1230320641144456,
+  "guarantee": 0.693199839911179,
+  "bank": 0.16273092026916952
+ },
+ "shapley_achieved": {
+  "firmographics": 0.07805918777147826,
+  "guarantee": 0.730564634394572,
+  "bank": 0.14708796887456282
+ },
+ "shapley_attainable_ci": {
+  "firmographics": [
+   0.12066904783993579,
+   0.12536484461305894
+  ],
+  "guarantee": [
+   0.6770655404242999,
+   0.7110709421703341
+  ],
+  "bank": [
+   0.15979622246235023,
+   0.16521402530463775
+  ]
+ },
+ "ranking_attainable": [
+  "guarantee",
+  "bank",
+  "firmographics"
+ ],
+ "ranking_achieved": [
+  "guarantee",
+  "bank",
+  "firmographics"
+ ],
+ "top_source_attainable": "guarantee",
+ "top_source_value_attainable": 0.693199839911179,
+ "top_rank_probability_attainable": 1.0,
+ "top_source_achieved": "guarantee",
+ "top_rank_probability_achieved": 1.0,
+ "rank_probabilities": {
+  "firmographics": [
+   0.0,
+   0.0,
+   1.0
+  ],
+  "guarantee": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "bank": [
+   0.0,
+   1.0,
+   0.0
+  ]
+ },
+ "ranks_that_hold": [
+  {
+   "rank": 1,
+   "modal_source": "guarantee",
+   "probability": 1.0
+  },
+  {
+   "rank": 2,
+   "modal_source": "bank",
+   "probability": 1.0
+  },
+  {
+   "rank": 3,
+   "modal_source": "firmographics",
+   "probability": 1.0
+  }
+ ],
+ "ranks_that_reshuffle": [],
+ "negative_sources_achieved": [],
+ "negative_sources_attainable": [],
+ "distance_attainable_minus_achieved": {
+  "firmographics": 0.044972876342967344,
+  "guarantee": -0.03736479448339303,
+  "bank": 0.015642951394606697
+ },
+ "distance_total": 0.023251033254181097,
+ "interactions_attainable": {
+  "firmographicsxguarantee": -0.194971648343704,
+  "firmographicsxbank": -0.1291340505059419,
+  "guaranteexbank": -0.20393276889702555
+ },
+ "interactions_achieved": {
+  "firmographicsxguarantee": -0.08399815749332196,
+  "firmographicsxbank": -0.12149385752772146,
+  "guaranteexbank": -0.13720306518739378
+ },
+ "loso_attainable": {
+  "firmographics": -0.0013649664203237988,
+  "guarantee": 0.5314034501808677,
+  "bank": 0.033853329457739334
+ },
+ "loso_achieved": {
+  "firmographics": 0.007338607957802945,
+  "guarantee": 0.6519894507510605,
+  "bank": 0.04976493521385161
+ },
+ "loso_ranking_attainable": [
+  "guarantee",
+  "bank",
+  "firmographics"
+ ],
+ "sources_whose_rank_differs": [],
+ "n_bootstrap": 300,
+ "simulator_seven_source": "withheld (the sim-to-real gate is decided in 19_gate_hc.py)",
+ "largest_interacting_pair": "GxB",
+ "largest_interaction": -0.20393276889702555
+}

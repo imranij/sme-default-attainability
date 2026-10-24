@@ -1,0 +1,88 @@
+{
+ "record": "AUTHORITATIVE -- supersedes results/gate_status_sba_arm.json, which records the SBA arm alone",
+ "source": "simulator + SBA National + Home Credit",
+ "rule": "Section 5.2: the gate passes only if Kendall tau between the simulator's ranking of the learner configurations and EACH real-data ranking is at least 0.6 and no pairwise sign among the top three configurations disagrees on either real dataset.",
+ "threshold": 0.6,
+ "n_configurations": 6,
+ "configurations": [
+  "dial leaves=15",
+  "dial leaves=31",
+  "dial leaves=63",
+  "xent leaves=15",
+  "xent leaves=31",
+  "xent leaves=63"
+ ],
+ "configurations_note": "the same six on both arms, as fixed in 10_gate_kendall.py",
+ "simulator_DIR_by_configuration": {
+  "dial leaves=15": 0.09534368070953447,
+  "dial leaves=31": 0.10421286031042132,
+  "dial leaves=63": 0.09090909090909083,
+  "xent leaves=15": 0.09756097560975607,
+  "xent leaves=31": 0.0820399113082041,
+  "xent leaves=63": 0.02882483370288247
+ },
+ "top3_simulator": [
+  "dial leaves=31",
+  "xent leaves=15",
+  "dial leaves=15"
+ ],
+ "kendall_tau_sba": -0.6,
+ "kendall_tau_sba_p": 0.1361111111111111,
+ "kendall_tau_home_credit": -0.2,
+ "kendall_tau_home_credit_p": 0.7194444444444444,
+ "top_three_sign_agreement_sba": "2 of 3",
+ "top_three_sign_agreement_home_credit": "2 of 3",
+ "arms": {
+  "SBA": {
+   "kendall_tau": -0.6,
+   "kendall_tau_p": 0.1361111111111111,
+   "tau_at_or_above_threshold": false,
+   "top3_sign_agreements": "2 of 3",
+   "n_sign_agreements": 2,
+   "n_sign_pairs": 3,
+   "all_signs_agree": false,
+   "arm_passes": false,
+   "DIR_by_configuration": {
+    "dial leaves=15": -0.05451974161984485,
+    "dial leaves=31": 0.001108435576959832,
+    "dial leaves=63": 0.00401330122692356,
+    "xent leaves=15": 0.023735810113519107,
+    "xent leaves=31": 0.04758628597637893,
+    "xent leaves=63": 0.04999426671253304
+   }
+  },
+  "HomeCredit": {
+   "kendall_tau": -0.2,
+   "kendall_tau_p": 0.7194444444444444,
+   "tau_at_or_above_threshold": false,
+   "top3_sign_agreements": "2 of 3",
+   "n_sign_agreements": 2,
+   "n_sign_pairs": 3,
+   "all_signs_agree": false,
+   "arm_passes": false,
+   "DIR_by_configuration": {
+    "dial leaves=15": -0.15237651444547984,
+    "dial leaves=31": -0.10018639328984169,
+    "dial leaves=63": -0.07828518173345755,
+    "xent leaves=15": 0.013047530288909481,
+    "xent leaves=31": -0.0060577819198508465,
+    "xent leaves=63": -0.024697110904007502
+   }
+  }
+ },
+ "decided": true,
+ "gate_decision": "fail",
+ "failing_arms": [
+  "SBA",
+  "HomeCredit"
+ ],
+ "reasons": [
+  "tau = -0.60 on SBA is below the 0.6 threshold",
+  "1 of 3 pairwise signs among the top three disagree on SBA",
+  "tau = -0.20 on HomeCredit is below the 0.6 threshold",
+  "1 of 3 pairwise signs among the top three disagree on HomeCredit"
+ ],
+ "simulator_seven_source_set": "withheld",
+ "consequence": "no simulator-based ranking is reported and the source-level analysis is confined to the real datasets (SBA's three sources and Home Credit's four); the simulator's seven-source Saudi attribution is WITHHELD",
+ "note": "The gate failing is the pre-specified conservative rule working as designed, not a failure of the run. Both real arms were computed on the same six configurations against the same simulator ranking."
+}

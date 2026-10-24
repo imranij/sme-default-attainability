@@ -1,0 +1,68 @@
+[
+ {
+  "source": "simulator",
+  "study": "S5_bootstrap_coverage",
+  "n": 600,
+  "base_rate": 0.08,
+  "method": "paired",
+  "true_DIR": 0.15385219962833674,
+  "coverage": 0.8875,
+  "nominal": 0.95,
+  "reps": 80
+ },
+ {
+  "source": "simulator",
+  "study": "S5_bootstrap_coverage",
+  "n": 600,
+  "base_rate": 0.08,
+  "method": "subsample",
+  "true_DIR": 0.15385219962833674,
+  "coverage": 0.775,
+  "nominal": 0.95,
+  "reps": 80
+ },
+ {
+  "source": "simulator",
+  "study": "S5_bootstrap_coverage",
+  "n": 5000,
+  "base_rate": 0.02,
+  "method": "paired",
+  "true_DIR": 0.2993954348341411,
+  "coverage": 0.925,
+  "nominal": 0.95,
+  "reps": 80
+ },
+ {
+  "source": "simulator",
+  "study": "S5_bootstrap_coverage",
+  "n": 5000,
+  "base_rate": 0.02,
+  "method": "subsample",
+  "true_DIR": 0.2993954348341411,
+  "coverage": 0.7875,
+  "nominal": 0.95,
+  "reps": 80
+ },
+ {
+  "source": "simulator",
+  "study": "S5_bootstrap_coverage",
+  "n": 5000,
+  "base_rate": 0.08,
+  "method": "paired",
+  "true_DIR": 0.18871964268829788,
+  "coverage": 0.8375,
+  "nominal": 0.95,
+  "reps": 80
+ },
+ {
+  "source": "simulator",
+  "study": "S5_bootstrap_coverage",
+  "n": 5000,
+  "base_rate": 0.08,
+  "method": "subsample",
+  "true_DIR": 0.18871964268829788,
+  "coverage": 0.5875,
+  "nominal": 0.95,
+  "reps": 80
+ }
+]

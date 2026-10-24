@@ -1,0 +1,24 @@
+{
+ "source": "HomeCredit",
+ "tuned_hyperparameters": {
+  "num_leaves": 31,
+  "n_estimators": 300,
+  "learning_rate": 0.05,
+  "min_child_samples": 50
+ },
+ "validation_auc": 0.7591239017944231,
+ "auc_tuned_gbdt": 0.758932244094944,
+ "auc_l2_logistic": 0.7293847666269458,
+ "n_fields": 120,
+ "fields": "all of source A",
+ "DI0_tuned_a0.5": 0.028044434038346472,
+ "DI0_logistic_a0.5": 0.0334295897395874,
+ "DI0_tuned_a0.6": 0.03282242504390054,
+ "DI0_logistic_a0.6": 0.03817720640839421,
+ "DI0_tuned_a0.7": 0.03987735761404813,
+ "DI0_logistic_a0.7": 0.04498745702870947,
+ "DI0_tuned_a0.8": 0.04777080420148938,
+ "DI0_logistic_a0.8": 0.05233976130857533,
+ "DI0_tuned_a0.9": 0.058895794189911845,
+ "DI0_logistic_a0.9": 0.06243676831912126
+}

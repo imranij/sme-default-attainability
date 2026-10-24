@@ -1,0 +1,48 @@
+{
+ "source": "simulator",
+ "base_rate": 0.1645,
+ "n_firms": 12000,
+ "min_true_M": 24.062720087643793,
+ "max_true_M": 1585.747392815759,
+ "mechanisms_lower_inequality_holds": [
+  "score",
+  "score_plus_unobservable",
+  "non_monotone",
+  "human_override",
+  "policy_floor"
+ ],
+ "mechanisms_lower_inequality_fails": [],
+ "mechanisms_true_dir_in_set": [
+  "score",
+  "score_plus_unobservable",
+  "non_monotone",
+  "human_override",
+  "policy_floor"
+ ],
+ "mechanisms_mar_fails": [
+  "score",
+  "score_plus_unobservable",
+  "non_monotone",
+  "human_override",
+  "policy_floor"
+ ],
+ "mechanisms_heckman_fails": [
+  "non_monotone"
+ ],
+ "mechanisms_fuzzy_fails": [],
+ "mean_true_M_by_mechanism": {
+  "score": 37.1123054708808,
+  "score_plus_unobservable": 1585.747392815759,
+  "non_monotone": 24.062720087643793,
+  "human_override": 41.62118491921005,
+  "policy_floor": 49.85811990686846
+ },
+ "runtime_s": 152.18665027618408,
+ "mechanisms_any_standard_method_fails": [
+  "human_override",
+  "non_monotone",
+  "policy_floor",
+  "score",
+  "score_plus_unobservable"
+ ]
+}

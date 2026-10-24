@@ -1,0 +1,22 @@
+{
+ "source": "SBA",
+ "n_lender_half_years": 61043,
+ "n_lenders": 5303,
+ "years": "1991-2010",
+ "loans_per_lender_per_six_months": {
+  "p50": 2.0,
+  "p75": 6.0,
+  "p90": 16.0,
+  "p95": 30.0,
+  "p99": 178.58000000000175,
+  "p99.9": 1690.748000000036
+ },
+ "max_six_month_book": 6893,
+ "required_observational_cohort": 100000,
+ "share_of_lender_half_years_at_or_above_requirement": 0.0,
+ "ratio_requirement_to_median": 50000.0,
+ "ratio_requirement_to_p99": 559.9731212901726,
+ "standing_phrase": "beyond the six-month book of every lender in the SBA record: at $a = 0.7$ the design's 100{,}000 applicants imply about 70,000 bookings in six months, against a largest observed six-month book of 6,893 loans, a 99th percentile of 179 and a median of 2",
+ "booked_equivalent_at_a07": 70000,
+ "share_of_lender_half_years_at_or_above_booked_equivalent": 0.0
+}

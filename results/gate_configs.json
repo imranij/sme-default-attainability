@@ -1,0 +1,164 @@
+[
+ {
+  "dataset": "SBA",
+  "objective": "xent",
+  "num_leaves": 15,
+  "DIR_a07": 0.023735810113519107,
+  "DI_a07": 0.2262937335542345,
+  "auc": 0.9506373953534522,
+  "fit_s": 40.9
+ },
+ {
+  "dataset": "SBA",
+  "objective": "xent",
+  "num_leaves": 31,
+  "DIR_a07": 0.04758628597637893,
+  "DI_a07": 0.22076529843803988,
+  "auc": 0.9559464002167344,
+  "fit_s": 13.0
+ },
+ {
+  "dataset": "SBA",
+  "objective": "xent",
+  "num_leaves": 63,
+  "DIR_a07": 0.04999426671253304,
+  "DI_a07": 0.22020713912342407,
+  "auc": 0.9578047323428607,
+  "fit_s": 62.4
+ },
+ {
+  "dataset": "SBA",
+  "objective": "dial",
+  "num_leaves": 15,
+  "DIR_a07": -0.05451974161984485,
+  "DI_a07": 0.24443302531208194,
+  "auc": 0.927446638219661,
+  "fit_s": 21.2
+ },
+ {
+  "dataset": "SBA",
+  "objective": "dial",
+  "num_leaves": 31,
+  "DIR_a07": 0.001108435576959832,
+  "DI_a07": 0.2315386591772909,
+  "auc": 0.9402312411983631,
+  "fit_s": 34.5
+ },
+ {
+  "dataset": "SBA",
+  "objective": "dial",
+  "num_leaves": 63,
+  "DIR_a07": 0.00401330122692356,
+  "DI_a07": 0.2308653241310877,
+  "auc": 0.943368275755424,
+  "fit_s": 22.3
+ },
+ {
+  "dataset": "simulator",
+  "objective": "xent",
+  "num_leaves": 15,
+  "DIR_a07": 0.09756097560975607,
+  "DI_a07": 0.1292063492063492,
+  "auc": 0.6518769230114217,
+  "fit_s": 1.4
+ },
+ {
+  "dataset": "simulator",
+  "objective": "xent",
+  "num_leaves": 31,
+  "DIR_a07": 0.0820399113082041,
+  "DI_a07": 0.13142857142857142,
+  "auc": 0.6469464565498763,
+  "fit_s": 1.1
+ },
+ {
+  "dataset": "simulator",
+  "objective": "xent",
+  "num_leaves": 63,
+  "DIR_a07": 0.02882483370288247,
+  "DI_a07": 0.13904761904761906,
+  "auc": 0.6256389932786849,
+  "fit_s": 2.7
+ },
+ {
+  "dataset": "simulator",
+  "objective": "dial",
+  "num_leaves": 15,
+  "DIR_a07": 0.09534368070953447,
+  "DI_a07": 0.1295238095238095,
+  "auc": 0.6519890395444947,
+  "fit_s": 2.0
+ },
+ {
+  "dataset": "simulator",
+  "objective": "dial",
+  "num_leaves": 31,
+  "DIR_a07": 0.10421286031042132,
+  "DI_a07": 0.12825396825396826,
+  "auc": 0.6479422003792094,
+  "fit_s": 2.6
+ },
+ {
+  "dataset": "simulator",
+  "objective": "dial",
+  "num_leaves": 63,
+  "DIR_a07": 0.09090909090909083,
+  "DI_a07": 0.13015873015873017,
+  "auc": 0.6457837797179773,
+  "fit_s": 3.8
+ },
+ {
+  "dataset": "HomeCredit",
+  "objective": "xent",
+  "num_leaves": 15,
+  "DIR_a07": 0.013047530288909481,
+  "DI_a07": 0.03935705658273716,
+  "auc": 0.7568716229091709,
+  "fit_s": 43.3
+ },
+ {
+  "dataset": "HomeCredit",
+  "objective": "xent",
+  "num_leaves": 31,
+  "DIR_a07": -0.0060577819198508465,
+  "DI_a07": 0.040118925950013935,
+  "auc": 0.7557831836628015,
+  "fit_s": 71.3
+ },
+ {
+  "dataset": "HomeCredit",
+  "objective": "xent",
+  "num_leaves": 63,
+  "DIR_a07": -0.024697110904007502,
+  "DI_a07": 0.04086221313760104,
+  "auc": 0.7505338364567885,
+  "fit_s": 5.5
+ },
+ {
+  "dataset": "HomeCredit",
+  "objective": "dial",
+  "num_leaves": 15,
+  "DIR_a07": -0.15237651444547984,
+  "DI_a07": 0.0459537303725727,
+  "auc": 0.7155829721203835,
+  "fit_s": 2.1
+ },
+ {
+  "dataset": "HomeCredit",
+  "objective": "dial",
+  "num_leaves": 31,
+  "DIR_a07": -0.10018639328984169,
+  "DI_a07": 0.04387252624732881,
+  "auc": 0.7262749228996236,
+  "fit_s": 2.2
+ },
+ {
+  "dataset": "HomeCredit",
+  "objective": "dial",
+  "num_leaves": 63,
+  "DIR_a07": -0.07828518173345755,
+  "DI_a07": 0.042999163801913966,
+  "auc": 0.7331845162567014,
+  "fit_s": 2.7
+ }
+]

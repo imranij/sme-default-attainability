@@ -1,0 +1,29 @@
+{
+ "source": "simulator",
+ "DI0": 0.14305555555555555,
+ "swap_share": 0.22583333333333333,
+ "true_M": 37.1123054708808,
+ "base_rate_note": "DI0 is the simulator incumbent's inflow at a=0.7",
+ "smallest_80": {
+  "observational": {
+   "n": 100000,
+   "months": 6,
+   "power": 0.8825
+  },
+  "randomised_band": {
+   "n": 50000,
+   "months": 6,
+   "power": 0.9775
+  },
+  "full_randomisation": {
+   "n": 10000,
+   "months": 6,
+   "power": 0.8625
+  }
+ },
+ "band_share": 0.1,
+ "rho_month": 0.3,
+ "reps": 400,
+ "runtime_s": 0.07013678550720215,
+ "cohort_saving_from_band": 0.5
+}

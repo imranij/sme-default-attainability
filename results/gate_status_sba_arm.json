@@ -1,0 +1,25 @@
+{
+ "source": "SBA+simulator",
+ "n_configurations": 6,
+ "configurations": [
+  "dial leaves=15",
+  "dial leaves=31",
+  "dial leaves=63",
+  "xent leaves=15",
+  "xent leaves=31",
+  "xent leaves=63"
+ ],
+ "kendall_tau_SBA": -0.6,
+ "kendall_tau_p": 0.1361111111111111,
+ "threshold": 0.6,
+ "kendall_tau_HomeCredit": null,
+ "top3_simulator": [
+  "dial leaves=31",
+  "xent leaves=15",
+  "dial leaves=15"
+ ],
+ "top3_sign_agreements_SBA": "2 of 3",
+ "sba_arm_passes": false,
+ "gate_decision": "undecided",
+ "reason": "the pre-specified rule of Section 5.2 requires tau on BOTH SBA and Home Credit; this file records the SBA arm only, and 19_gate_hc.py adds the Home Credit arm and decides the gate"
+}

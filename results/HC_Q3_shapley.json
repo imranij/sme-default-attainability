@@ -1,0 +1,199 @@
+{
+ "source": "HomeCredit",
+ "a": 0.7,
+ "DI0_tuned": 0.03987735761404813,
+ "base_rate_test": 0.07965867998647207,
+ "n_test": 76878,
+ "n_sources": 4,
+ "sources": {
+  "A": "application",
+  "U": "bureau",
+  "I": "instalments",
+  "P": "POS-cash"
+ },
+ "grouping": "fixed in 15_hc_prepare.py (application; bureau; instalments; POS-cash)",
+ "aggregation": "fixed in 15_hc_prepare.py",
+ "v_attainable": {
+  "EMPTY": -0.9975917350754866,
+  "A": 0.09388310342280015,
+  "U": -0.334353254877251,
+  "I": -0.38495463102542193,
+  "P": -0.4902216829418087,
+  "A+U": 0.11215577869750604,
+  "A+I": 0.12367555786461404,
+  "A+P": 0.12337584431121917,
+  "U+I": -0.17989333278449138,
+  "U+P": -0.22179716185058296,
+  "I+P": -0.30863141943476413,
+  "A+U+I": 0.13891454540581394,
+  "A+U+P": 0.13572490463312892,
+  "A+I+P": 0.1442634772858684,
+  "U+I+P": -0.14998840435577843,
+  "A+U+I+P": 0.15276583064601124
+ },
+ "v_achieved": {
+  "EMPTY": -0.9975917350754866,
+  "A": 0.006989748369058635,
+  "U": -0.472972972972973,
+  "I": -0.5256290773532153,
+  "P": -0.6458527493010251,
+  "A+U": 0.04147250698974836,
+  "A+I": 0.04147250698974836,
+  "A+P": 0.058247903075489216,
+  "U+I": -0.30102516309412874,
+  "U+P": -0.35834109972041017,
+  "I+P": -0.43150046598322467,
+  "A+U+I": 0.06663560111835976,
+  "A+U+P": 0.07875116495806156,
+  "A+I+P": 0.07781919850885355,
+  "U+I+P": -0.26095060577819185,
+  "A+U+I+P": 0.1095060577819198
+ },
+ "shapley_attainable": {
+  "application": 0.5733874009677249,
+  "bureau": 0.22443433818534103,
+  "instalments": 0.1978609906173517,
+  "POS-cash": 0.15467483595108006
+ },
+ "shapley_achieved": {
+  "application": 0.6020695709232674,
+  "bureau": 0.20264428356694558,
+  "instalments": 0.1725883655799931,
+  "POS-cash": 0.12979557278720033
+ },
+ "shapley_attainable_ci": {
+  "application": [
+   0.5539122188752967,
+   0.5947692078503157
+  ],
+  "bureau": [
+   0.2157264001872947,
+   0.23371924100915448
+  ],
+  "instalments": [
+   0.1891082002383653,
+   0.20763409385271084
+  ],
+  "POS-cash": [
+   0.145646428704534,
+   0.16423627730615337
+  ]
+ },
+ "ranking_attainable": [
+  "application",
+  "bureau",
+  "instalments",
+  "POS-cash"
+ ],
+ "ranking_achieved": [
+  "application",
+  "bureau",
+  "instalments",
+  "POS-cash"
+ ],
+ "top_source_attainable": "application",
+ "top_source_value_attainable": 0.5733874009677249,
+ "top_rank_probability_attainable": 1.0,
+ "top_source_achieved": "application",
+ "top_rank_probability_achieved": 1.0,
+ "rank_probabilities": {
+  "application": [
+   1.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "bureau": [
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  "instalments": [
+   0.0,
+   0.0,
+   1.0,
+   0.0
+  ],
+  "POS-cash": [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ },
+ "ranks_that_hold": [
+  {
+   "rank": 1,
+   "modal_source": "application",
+   "probability": 1.0
+  },
+  {
+   "rank": 2,
+   "modal_source": "bureau",
+   "probability": 1.0
+  },
+  {
+   "rank": 3,
+   "modal_source": "instalments",
+   "probability": 1.0
+  },
+  {
+   "rank": 4,
+   "modal_source": "POS-cash",
+   "probability": 1.0
+  }
+ ],
+ "ranks_that_reshuffle": [],
+ "negative_sources_achieved": [],
+ "negative_sources_attainable": [],
+ "distance_attainable_minus_achieved": {
+  "application": -0.028682169955542514,
+  "bureau": 0.02179005461839545,
+  "instalments": 0.02527262503735861,
+  "POS-cash": 0.024879263163879728
+ },
+ "distance_total": 0.04325977286409133,
+ "interactions_attainable": {
+  "applicationxbureau": -0.339351784125632,
+  "applicationxinstalments": -0.2606047913495322,
+  "applicationxPOS-cash": -0.18876402802133294,
+  "bureauxinstalments": -0.17281049526398162,
+  "bureauxPOS-cash": -0.14257384744847912,
+  "instalmentsxPOS-cash": -0.16218089142366854
+ },
+ "interactions_achieved": {
+  "applicationxbureau": -0.2874078694426831,
+  "applicationxinstalments": -0.2249661173457587,
+  "applicationxPOS-cash": -0.12175083309599176,
+  "bureauxinstalments": -0.11732399246225443,
+  "bureauxPOS-cash": -0.0882000409245098,
+  "instalmentsxPOS-cash": -0.09891765509039989
+ },
+ "loso_attainable": {
+  "application": 0.30275423500178966,
+  "bureau": 0.008502353360142823,
+  "instalments": 0.017040926012882318,
+  "POS-cash": 0.013851285240197297
+ },
+ "loso_achieved": {
+  "application": 0.37045666356011164,
+  "bureau": 0.03168685927306625,
+  "instalments": 0.030754892823858238,
+  "POS-cash": 0.04287045666356004
+ },
+ "loso_ranking_attainable": [
+  "application",
+  "instalments",
+  "POS-cash",
+  "bureau"
+ ],
+ "sources_whose_rank_differs": [
+  "bureau",
+  "instalments",
+  "POS-cash"
+ ],
+ "n_bootstrap": 300,
+ "largest_interacting_pair": "applicationxbureau",
+ "largest_interaction": -0.339351784125632
+}

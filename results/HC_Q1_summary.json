@@ -1,0 +1,57 @@
+{
+ "source": "HomeCredit",
+ "n_test": 76878,
+ "base_rate_test": 0.07965867998647207,
+ "base_rate_train": 0.08108553416033265,
+ "gap_a07_pp": -0.051253858063420726,
+ "gap_a07_band_pp": [
+  -0.2750162594072285,
+  0.9310982169317944
+ ],
+ "gap_a05_pp": -0.10755563402968307,
+ "band_a07": [
+  0.02619956321765595,
+  0.03826070798104618
+ ],
+ "band_width_a07_pp": 1.2061144763390228,
+ "band_a05": [
+  0.018312827023175136,
+  0.027862327323811754
+ ],
+ "DI_star_a07": 0.0360230839676081,
+ "DI_achieved_a07": 0.035510545386973895,
+ "DI0_tuned_a07": 0.03987735761404813,
+ "DI0_logistic_a07": 0.04498745702870947,
+ "plugin_a07": 0.033785459954170025,
+ "realised_a07": 0.03826070798104618,
+ "plugin_a05": 0.023977903179826208,
+ "realised_a05": 0.027862327323811754,
+ "attainable_reduction_tuned_a07": 0.09665318559327585,
+ "attainable_reduction_tuned_a07_band": [
+  0.04054054054054046,
+  0.34299650766162393
+ ],
+ "attainable_reduction_logistic_a07": 0.19926383159156136,
+ "difference_between_incumbents": -0.10261064599828551,
+ "achieved_DIR_tuned_a07": 0.1095060577819198,
+ "achieved_DIR_logistic_a07": 0.21065675340768275,
+ "configurations_clearing_15": [],
+ "n_configurations": 15,
+ "model_or_data_by_configuration": {
+  "A": "data",
+  "U": "data",
+  "I": "data",
+  "P": "data",
+  "A+U": "data",
+  "A+I": "data",
+  "A+P": "data",
+  "U+I": "data",
+  "U+P": "data",
+  "I+P": "data",
+  "A+U+I": "data",
+  "A+U+P": "data",
+  "A+I+P": "data",
+  "U+I+P": "data",
+  "A+U+I+P": "data"
+ }
+}

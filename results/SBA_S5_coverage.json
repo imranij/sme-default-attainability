@@ -1,0 +1,13 @@
+{
+ "source": "SBA",
+ "study": "S5_coverage_extension",
+ "a": 0.6,
+ "population_n": 161244,
+ "subsample_m": 40000,
+ "reps": 60,
+ "n_boot": 60,
+ "base_rate": 0.4379449777976235,
+ "population_DIR": 0.14199372056514914,
+ "coverage": 0.9666666666666667,
+ "nominal": 0.95
+}

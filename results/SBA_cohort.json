@@ -1,0 +1,69 @@
+{
+ "rows_raw": 899164,
+ "cols_raw": 27,
+ "extract_date": "2014-12-31",
+ "label_counts": {
+  "P I F": 739609,
+  "CHGOFF": 157558,
+  "<NA>": 1997
+ },
+ "rows_missing_label": 1997,
+ "rows_no_date_or_zero_term": 806,
+ "rows_after_label_and_date": 896361,
+ "rows_matured": 683498,
+ "rows_not_matured": 212863,
+ "censoring_rate_excluded_cohorts": 0.23747463354608245,
+ "chargeoff_rate_all": 0.17495629551040262,
+ "chargeoff_rate_matured": 0.20920324565690024,
+ "chargeoff_rate_not_matured": 0.06499015798894124,
+ "fy_min": 1966,
+ "fy_max": 2014,
+ "split_test_from_fy": 2006,
+ "n_train": 522254,
+ "n_test": 161244,
+ "base_rate_train": 0.13858007789313245,
+ "base_rate_test": 0.4379449777976235,
+ "n_features": 22,
+ "features_by_source": {
+  "firmographics": [
+   "naics2",
+   "log_noemp",
+   "new_exist",
+   "create_job",
+   "retained_job",
+   "log_create_job",
+   "log_retained_job",
+   "franchise",
+   "urban_rural",
+   "state"
+  ],
+  "guarantee": [
+   "term",
+   "log_grappv",
+   "log_sba_appv",
+   "log_disb",
+   "guarantee_share",
+   "disb_to_appv",
+   "revline",
+   "lowdoc"
+  ],
+  "bank": [
+   "bank",
+   "bank_freq",
+   "bank_state",
+   "same_state"
+  ]
+ },
+ "incumbent_fields": [
+  "naics2",
+  "log_noemp",
+  "new_exist",
+  "create_job",
+  "retained_job",
+  "franchise",
+  "urban_rural",
+  "term",
+  "log_grappv"
+ ],
+ "size_band_edges": "NoEmp in {0},{1-4},{5-19},{20-99},{100+}"
+}

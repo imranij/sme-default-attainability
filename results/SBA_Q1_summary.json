@@ -1,0 +1,41 @@
+{
+ "source": "SBA",
+ "n_test": 161244,
+ "base_rate_test": 0.4379449777976235,
+ "base_rate_train": 0.13858007789313245,
+ "gap_a07_pp": 0.6092427563453573,
+ "gap_a07_band_pp": [
+  0.6092427563453573,
+  1.5542879070698317
+ ],
+ "gap_a05_pp": 1.6761589625271855,
+ "band_a07": [
+  0.20087232058200258,
+  0.21032277208924732
+ ],
+ "band_width_a07_pp": 0.9450451507244745,
+ "DI_star_a07": 0.21032277208924732,
+ "DI_achieved_a07": 0.2164151996527009,
+ "DI0_tuned_a07": 0.2317955896554474,
+ "DI0_logistic_a07": 0.35568037848517337,
+ "attainable_reduction_tuned_a07": 0.09263686853627517,
+ "attainable_reduction_tuned_a07_band": [
+  0.09263686853627517,
+  0.13340749545498565
+ ],
+ "attainable_reduction_logistic_a07": 0.4086747967796186,
+ "difference_between_incumbents": -0.3160379282433434,
+ "achieved_DIR_tuned_a07": 0.06635324695180211,
+ "achieved_DIR_logistic_a07": 0.3915458576196881,
+ "configurations_clearing_15": [],
+ "n_configurations": 7,
+ "model_or_data_by_configuration": {
+  "F": "data",
+  "G": "data",
+  "B": "data",
+  "F+G": "data",
+  "F+B": "data",
+  "G+B": "data",
+  "F+G+B": "data"
+ }
+}
