@@ -150,5 +150,6 @@ Please cite both the paper and this archived copy of the code. The paper is
 > medium-sized enterprise default reduction. Working paper, King Fahd University of Petroleum and
 > Minerals, 2026.
 
-The archived copy of this repository is on Zenodo at DOI [to be added once the record is
-minted]. `CITATION.cff` holds the same details in a machine-readable form.
+The archived copy of this repository is on Zenodo at
+[10.5281/zenodo.23622378](https://doi.org/10.5281/zenodo.23622378), a DOI that always resolves to the
+latest archived version. `CITATION.cff` holds the same details in a machine-readable form.

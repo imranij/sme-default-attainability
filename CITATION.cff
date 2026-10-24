@@ -11,6 +11,7 @@ authors:
     email: "imran.imran@kfupm.edu.sa"
     affiliation: "Interdisciplinary Research Center for Intelligent Manufacturing and Robotics, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
 version: "2026-10-24"
+doi: "10.5281/zenodo.23622378"
 date-released: "2026-10-24"
 repository-code: "https://github.com/imranij/sme-default-attainability"
 keywords:
