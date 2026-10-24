@@ -1,0 +1,10 @@
+{
+  "title": "sme-default-attainability: code and results for 'Machine learning, attainability bounds and data value for small and medium-sized enterprise default reduction'",
+  "description": "<p>Analysis code, the SaudiSME-Sim simulator and the result files behind the paper 'Machine learning, attainability bounds and data value for small and medium-sized enterprise default reduction'. The scripts compute the ceiling on default inflow at a fixed approval rate, the identified set of the default-inflow reduction from accepted-loan data, and a Shapley value over data sources, on SBA National, Home Credit, Berka and the simulator. The public datasets are not included and are downloaded from their original sources.</p>",
+  "upload_type": "software",
+  "creators": [
+    {"name": "Ahmad, Pir Noman", "affiliation": "King Fahd University of Petroleum and Minerals"},
+    {"name": "Imran", "affiliation": "King Fahd University of Petroleum and Minerals"}
+  ],
+  "keywords": ["credit risk", "small and medium-sized enterprises", "partial identification", "Shapley value", "default inflow"]
+}

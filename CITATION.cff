@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper and this archive."
+title: "sme-default-attainability: code and results for 'Machine learning, attainability bounds and data value for small and medium-sized enterprise default reduction'"
+type: software
+authors:
+  - given-names: "Pir Noman"
+    family-names: "Ahmad"
+    email: "pirnoman.ahmad@kfupm.edu.sa"
+    affiliation: "Interdisciplinary Research Center for Finance and Digital Economy, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
+  - family-names: "Imran"
+    email: "imran.imran@kfupm.edu.sa"
+    affiliation: "Interdisciplinary Research Center for Intelligent Manufacturing and Robotics, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia"
+version: "2026-10-24"
+date-released: "2026-10-24"
+repository-code: "https://github.com/imranij/sme-default-attainability"
+keywords:
+  - credit risk
+  - small and medium-sized enterprises
+  - partial identification
+  - Shapley value
+  - default inflow

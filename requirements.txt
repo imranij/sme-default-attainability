@@ -1,0 +1,11 @@
+# Versions used for the published results (Python 3.11.15).
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+lightgbm==4.7.0
+matplotlib==3.10.9
+# Only for the unit tests in lib/tests
+pytest==9.1.1
+# Optional: hijridate gives exact Hijri months in the simulator (a fallback is used without it),
+# and torch enables one extra unit test. Neither is needed for the published results.
